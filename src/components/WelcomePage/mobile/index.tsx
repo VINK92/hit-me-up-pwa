@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Typography } from '@mui/material';
 import Logo from 'components/Logo';
-import Spacer from 'components/Spacer';
+import Spacer from 'components/SharedComponents/mobile/Spacer';
 import Button from 'components/SharedComponents/mobile/Button';
 import GradientContainer from 'components/GradientContainer/mobile';
 import NarrowContainer from 'components/NarrowContainer/mobile';

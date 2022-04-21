@@ -6,5 +6,8 @@ export default {
     welcomePageSubtitle: 'Choose and learn.',
     signUp: 'Sign up',
     login: 'Log in',
+    settingsPageTitle: 'Settings',
+    settingsPagePersonalInfoItem: 'Personal Info',
+    settingsPagePersonalPlanItem: 'Personal Plan',
   },
 };

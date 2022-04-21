@@ -1,9 +1,9 @@
 import React from 'react';
 import { createTheme, ThemeOptions, Theme, css } from '@mui/material/styles';
-import MalloryMPBook from '../../assets/fonts/MalloryMP/Mallory-MP-Book.ttf';
-import MalloryMPBookItalic from '../../assets/fonts/MalloryMP/Mallory-MP-Book-Italic.ttf';
-import MalloryMPMedium from '../../assets/fonts/MalloryMP/Mallory-MP-Medium.ttf';
-import MalloryMPMediumItalic from '../../assets/fonts/MalloryMP/Mallory-MP-Medium-Italic.ttf';
+import MalloryMPBook from 'assets/fonts/MalloryMP/Mallory-MP-Book.ttf';
+import MalloryMPBookItalic from 'assets/fonts/MalloryMP/Mallory-MP-Book-Italic.ttf';
+import MalloryMPMedium from 'assets/fonts/MalloryMP/Mallory-MP-Medium.ttf';
+import MalloryMPMediumItalic from 'assets/fonts/MalloryMP/Mallory-MP-Medium-Italic.ttf';
 
 declare module '@mui/material/styles' {
   interface Palette {
