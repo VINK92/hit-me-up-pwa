@@ -24,7 +24,7 @@ const WelcomePage: React.FC<WelcomePageProps> = () => {
         </Typography>
         <Spacer size={24} />
         <Typography variant="bodyDefaultBook" color={colors.backgroundSecondary}>
-          {t('welcomePageTitle')}
+          {t('welcomePageSubtitle')}
         </Typography>
         <FixedContainer>
           <ButtonWithDarkText variant="outlined" onClick={() => {}} type="button">
