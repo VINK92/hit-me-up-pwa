@@ -10,7 +10,8 @@
     "format": "prettier --write .",
     "lint": "tsc --noEmit && eslint --cache . --ext .js --ext .ts --ext .tsx --ext .jsx",
     "postinstall": "husky install",
-    "deploy": "netlify deploy -p"
+    "deploy": "netlify deploy -p",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
