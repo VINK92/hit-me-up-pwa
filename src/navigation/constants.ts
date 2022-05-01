@@ -10,5 +10,7 @@ export const PATHS = {
   PERSONAL_PLAN: '/personal-plan',
 
   // words routes
+  WORDS: '/words',
+  SELECT_WORDS: '/words/select',
   // collocations routes
 };

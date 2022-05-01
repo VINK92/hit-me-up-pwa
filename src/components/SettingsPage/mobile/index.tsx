@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
 
 import List from '@mui/material/List';
 import CommonContainer from 'components/CommonContainer/mobile';
@@ -14,8 +14,6 @@ import { PATHS } from 'navigation/constants';
 interface Props {}
 
 const ContentBlock: React.FC<Props> = () => {
-  const { t } = useTranslation();
-
   const settingPageItems = [
     {
       title: t('settingsPagePersonalInfoItem'),

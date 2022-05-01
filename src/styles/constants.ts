@@ -1,6 +1,5 @@
 const colors = {
-  primaryDefault: '#F99E9E',
-  primaryDefaultDisabled: '#77AAAF',
+  primaryDefault: '#77AAAF',
   primaryDark: '#0B4D4D',
   primaryLight: '#87CCCC',
   primaryLight2: '#E7F2F2',
@@ -60,7 +59,7 @@ const colors = {
 };
 
 const gradients = {
-  primary: `linear-gradient(135deg, ${colors.warningLight}, ${colors.secondaryLight})`,
+  primary: `linear-gradient(135deg, ${colors.warningLight}, ${colors.primaryDefault})`,
   primaryDisabled: `linear-gradient(90deg, ${colors.textPrimary}, ${colors.textDisabled})`,
 };
 

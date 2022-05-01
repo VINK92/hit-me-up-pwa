@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
 import { Typography } from '@mui/material';
 import Logo from 'components/Logo';
 import Spacer from 'components/SharedComponents/mobile/Spacer';
@@ -10,10 +10,12 @@ import FixedContainer from 'components/SharedComponents/mobile/FixedContainer';
 import { colors } from 'styles/constants';
 import { ButtonWithDarkText, StyledTypography } from 'components/WelcomePage/mobile/styled';
 
-interface WelcomePageProps {}
+interface WelcomePageProps {
+  onSigupClick: () => void;
+  onLiginClick: () => void;
+}
 
-const WelcomePage: React.FC<WelcomePageProps> = () => {
-  const { t } = useTranslation();
+const WelcomePage: React.FC<WelcomePageProps> = ({ onSigupClick, onLiginClick }) => {
   return (
     <GradientContainer>
       <NarrowContainer>
@@ -27,11 +29,11 @@ const WelcomePage: React.FC<WelcomePageProps> = () => {
           {t('welcomePageSubtitle')}
         </Typography>
         <FixedContainer>
-          <ButtonWithDarkText variant="outlined" onClick={() => {}} type="button">
+          <ButtonWithDarkText variant="outlined" onClick={onSigupClick} type="button">
             <StyledTypography variant="buttonLarge">{t('signUp')}</StyledTypography>
           </ButtonWithDarkText>
           <Spacer size={16} />
-          <Button variant="contained" onClick={() => {}} type="button">
+          <Button variant="contained" onClick={onLiginClick} type="button">
             <Typography variant="buttonLarge">{t('login')}</Typography>
           </Button>
         </FixedContainer>

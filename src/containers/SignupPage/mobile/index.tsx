@@ -1,13 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ContentBlock from 'components/SignupPage/mobile';
+import { CreateUser } from 'redux/user/types';
 
 const MobileSignupPage: React.FC = () => {
   const navigate = useNavigate();
   const onGoBackClick = () => {
     navigate(-1);
   };
-  return <ContentBlock onGoBackClick={onGoBackClick} />;
+  const onSubmitContinue = (values: CreateUser) => {
+    console.log('values', values);
+  };
+  return <ContentBlock onGoBackClick={onGoBackClick} onSubmitContinue={onSubmitContinue} />;
 };
 
 export default MobileSignupPage;

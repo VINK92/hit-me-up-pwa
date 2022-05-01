@@ -19,13 +19,10 @@ export const StyledButton = styled<React.FC<ButtonProps & { gradient?: boolean }
   }
   return css`
     width: 100%;
-    height: ${pxToRem(52)};
+    height: ${pxToRem(56)};
     border-radius: 8px;
     background: ${background};
     box-shadow: ${theme.customShadows?.primary};
-    /* &:hover {
-      background: ${background};
-    } */
 
     &.Mui-disabled {
       color: white;
