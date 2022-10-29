@@ -29,6 +29,7 @@ const WelcomePage: React.FC<WelcomePageProps> = ({ onSigupClick, onLiginClick })
           {t('welcomePageSubtitle')}
         </Typography>
         <span>HELLO HELLO HELLO</span>
+        <span>HELLO HELLO HELLO</span>
         <FixedContainer>
           <ButtonWithDarkText variant="outlined" onClick={onSigupClick} type="button">
             <StyledTypography variant="buttonLarge">{t('signUp')}</StyledTypography>
