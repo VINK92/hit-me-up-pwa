@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   Avatar,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
+  // Card,
+  // CardActionArea,
+  // CardContent,
+  // CardMedia,
   // Divider,
   ListItem,
   ListItemAvatar,
@@ -36,7 +36,7 @@ const WordItem: React.FC<WordItemProps> = ({ item }) => {
       </ListItemText>
       <Spacer size={15} />
 
-      <Card sx={{ maxWidth: 345 }}>
+      {/* <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia component="img" height="140" image={item.image} alt="green iguana" />
           <CardContent>
@@ -49,7 +49,7 @@ const WordItem: React.FC<WordItemProps> = ({ item }) => {
             </Typography>
           </CardContent>
         </CardActionArea>
-      </Card>
+      </Card> */}
     </ListItem>
   );
 };
