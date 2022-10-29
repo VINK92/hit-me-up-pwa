@@ -9,7 +9,7 @@ const MobileSignupPage: React.FC = () => {
     navigate(-1);
   };
   const onSubmitContinue = (values: CreateUser) => {
-    console.log('values', values);
+    return values;
   };
   return <ContentBlock onGoBackClick={onGoBackClick} onSubmitContinue={onSubmitContinue} />;
 };

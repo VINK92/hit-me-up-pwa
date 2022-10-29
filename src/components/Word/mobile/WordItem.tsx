@@ -5,7 +5,7 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Divider,
+  // Divider,
   ListItem,
   ListItemAvatar,
   ListItemText,
@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import Spacer from 'components/SharedComponents/mobile/Spacer';
 import { Word } from 'types/interfaces/word';
-import { colors } from 'styles/constants';
+// import { colors } from 'styles/constants';
 
 interface WordItemProps {
   item: Word;
@@ -23,18 +23,18 @@ const WordItem: React.FC<WordItemProps> = ({ item }) => {
   // const translates = item.translate.join(', ');
   return (
     <ListItem alignItems="flex-start" disableGutters>
-      {/* <ListItemAvatar>
-          <Avatar alt={item.word} src={item.image} />
-        </ListItemAvatar>
-        <ListItemText>
-          <Typography variant="h6" color="primary">
-            {item.word.toUpperCase()}
-          </Typography>
-          <Typography variant="bodySmallBook" color="primary">
-            Level: {item.level}
-          </Typography>
-        </ListItemText>
-        <Spacer size={15} /> */}
+      <ListItemAvatar>
+        <Avatar alt={item.word} src={item.image} />
+      </ListItemAvatar>
+      <ListItemText>
+        <Typography variant="h6" color="primary">
+          {item.word.toUpperCase()}
+        </Typography>
+        <Typography variant="bodySmallBook" color="primary">
+          Level: {item.level}
+        </Typography>
+      </ListItemText>
+      <Spacer size={15} />
 
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
